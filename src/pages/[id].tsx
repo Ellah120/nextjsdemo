@@ -19,19 +19,6 @@ interface PostProps {
   itemData: Post;
 }
 
-// export default function Item({
-//   itemData,
-// }: {
-//   itemData: {
-//     id: number
-//     title: string
-//     image: string
-//     description: string
-//     category: string
-//     price: number
-//   }[]
-// }) {
-
 export default function PostPage({ itemData }: PostProps) {
   return (
     <div className={styles.itemdiv}>
@@ -83,7 +70,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 };
 
