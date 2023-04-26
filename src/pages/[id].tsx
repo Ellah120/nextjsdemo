@@ -1,6 +1,6 @@
 import { GetStaticProps, GetStaticPaths } from "next";
 import axios from "axios";
-import { Typography, Grid, Button } from "@mui/material";
+import { Grid } from "@mui/material";
 import { ArrowBack } from "@mui/icons-material";
 import Image from "next/image";
 import Link from "next/link";
